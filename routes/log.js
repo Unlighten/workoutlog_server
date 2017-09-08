@@ -10,15 +10,13 @@ router.post('/', function(req, res) {
     var result = req.body.log.result; 
     var user = req.user;
     var definition = req.body.log.def;
-   
-
     // Use our sequelize model to create log
   	Log 
 	    .create({ 
 	    	description: description,
 	    	result: result,
 	    	owner: user.id,
-	    	def: definition
+	    	definition: definition
 	    })
 	    .then(
 	    	function createSuccess(log) {
