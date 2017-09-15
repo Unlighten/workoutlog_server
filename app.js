@@ -22,7 +22,7 @@ app.use('/api/definition', require('./routes/definition'));
 app.use('/api/log', require('./routes/log'));
 
 
-app.listen(process.env.PORT, function(){
+app.listen(process.env.PORT ||  3000, function(){
 	console.log('App is listening on 3000.')
 });
 

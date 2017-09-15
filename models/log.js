@@ -1,10 +1,10 @@
 // build a model in sqllize
 module.exports = function(sequelize, DataTypes) {
 	return sequelize.define('log', {
-		description: DataTypes.STRING,
+		desc: DataTypes.STRING,
 		result: DataTypes.STRING,
 		owner: DataTypes.INTEGER,
-		definition: DataTypes.STRING
+		def: DataTypes.STRING
 	},{
 	});
 };
