@@ -3,10 +3,10 @@ var sequelize = new Sequelize(process.env.DATABASE_URL || 'postgres://postgres:e
 	dialect: 'postgres'
 });
 
-var sequelize = new Sequelize('workoutlog','postgres','edbpostgres2legacy2', {
-	host: 'localhost',
-	dialect: 'postgres'
-})
+// var sequelize = new Sequelize('workoutlog','postgres','edbpostgres2legacy2', {
+// 	host: 'localhost',
+// 	dialect: 'postgres'
+// })
 
 sequelize.authenticate().then(
 	function() {
